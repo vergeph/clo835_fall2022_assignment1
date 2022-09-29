@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-RUN apt-get update -y
+RUN apt-get update -y && apt-get install iputils-ping -y
 COPY . /app
 WORKDIR /app
 RUN set -xe \
