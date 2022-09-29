@@ -44,8 +44,6 @@ jobs:
         env:
          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         run: |
-          cd clo835_fall2022_assignment1/  
-          ls -ltra
           # Docker build
           docker build -t $ECR_REGISTRY/$ECR_REPO_PREFIX-app:$IMAGE_TAG .
           # Unit test
@@ -58,8 +56,6 @@ jobs:
         env:
          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         run: |
-          cd clo835_fall2022_assignment1/  
-          ls -ltra
           # Docker build
           docker build -f Dockerfile_mysql -t $ECR_REGISTRY/$ECR_REPO_PREFIX-db:$IMAGE_TAG .
           # Unit test
