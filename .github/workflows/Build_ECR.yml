@@ -22,7 +22,7 @@ jobs:
   # Env to use the repositories     
     env:
      ECR_REPO_PREFIX: ass02
-     IMAGE_TAG: v1.5
+     IMAGE_TAG: v2.0
        
      
     # Steps represent a sequence of tasks that will be executed as part of the job
