@@ -12,7 +12,7 @@ DBUSER = os.environ.get("DBUSER") or "root"
 DBPWD = os.environ.get("DBPWD") or "passwors"
 DATABASE = os.environ.get("DATABASE") or "employees"
 COLOR_FROM_ENV = os.environ.get('APP_COLOR') or "lime"
-DBPORT = os.environ.get("DBPORT")
+DBPORT = int(os.environ.get("DBPORT"))
 
 # Create a connection to the MySQL database
 db_conn = connections.Connection(
