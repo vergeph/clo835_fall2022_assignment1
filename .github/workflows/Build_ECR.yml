@@ -21,7 +21,7 @@ jobs:
  
   # Env to use the repositories     
     env:
-     ECR_REPO_PREFIX: ass02
+     ECR_REPO_PREFIX: ass03
      IMAGE_TAG: v3.0
        
      
