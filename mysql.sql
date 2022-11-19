@@ -1,8 +1,6 @@
-DROP DATABASE IF EXISTS employees;
 CREATE DATABASE employees;
 USE employees;
 
-DROP TABLE IF EXISTS employee;
 CREATE TABLE employee(
 emp_id VARCHAR(20),
 first_name VARCHAR(20),
